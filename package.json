@@ -1,0 +1,13 @@
+{
+  "name": "browser-extension",
+  "version": "0.0.0",
+  "author": "Jiahonzheng <jiahonzheng@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint -c ./.eslintrc.js 'src/**/*.@(ts|tsx|js|jsx)' || true",
+    "format": "prettier --write 'src/**/*.{js,jsx,ts,tsx,json,css,less,md}'"
+  },
+  "devDependencies": {
+    "@umijs/fabric": "^2.10.1"
+  }
+}
