@@ -1,0 +1,12 @@
+{
+  "version": "0.0.0",
+  "manifest_version": 3,
+  "name": "Browser Extension",
+  "icons": {
+    "128": "assets/images/icon-128.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "assets/images/icon-34.png"
+  }
+}
