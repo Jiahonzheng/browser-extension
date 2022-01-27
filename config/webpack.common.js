@@ -8,6 +8,7 @@ const config = require('./config');
 module.exports = {
   entry: {
     popup: path.join(config.src, 'apps/popup/index.tsx'),
+    style: path.join(config.src, 'styles/index.ts'),
   },
   output: {
     path: config.build,
@@ -32,7 +33,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: path.join(config.src, 'apps/popup/index.html'),
       filename: 'popup.html',
-      chunks: ['popup'],
+      chunks: ['style', 'popup'],
     }),
   ],
   module: {

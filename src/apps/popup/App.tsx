@@ -1,5 +1,5 @@
 import React from 'react';
 
 export const App = () => {
-  return <div>Popup</div>;
+  return <div className="text-red-500">Popup</div>;
 };
