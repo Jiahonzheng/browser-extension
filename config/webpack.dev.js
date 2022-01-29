@@ -43,7 +43,4 @@ module.exports = merge(common, {
     ],
   },
   plugins: [new ReactRefreshWebpackPlugin()],
-  optimization: {
-    runtimeChunk: 'single',
-  },
 });

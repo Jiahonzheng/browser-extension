@@ -7,9 +7,22 @@ const config = require('./config');
 
 module.exports = {
   entry: {
-    options: path.join(config.src, 'apps/options/index.tsx'),
-    popup: path.join(config.src, 'apps/popup/index.tsx'),
-    style: path.join(config.src, 'styles/index.ts'),
+    background: {
+      import: path.join(config.src, 'apps/background/index.ts'),
+      runtime: false,
+    },
+    options: {
+      import: path.join(config.src, 'apps/options/index.tsx'),
+      runtime: 'single',
+    },
+    popup: {
+      import: path.join(config.src, 'apps/popup/index.tsx'),
+      runtime: 'single',
+    },
+    style: {
+      import: path.join(config.src, 'styles/index.ts'),
+      runtime: 'single',
+    },
   },
   output: {
     path: config.build,
