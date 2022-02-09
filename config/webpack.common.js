@@ -11,6 +11,10 @@ module.exports = {
       import: path.join(config.src, 'apps/background/index.ts'),
       runtime: false,
     },
+    content: {
+      import: path.join(config.src, 'apps/content/index.ts'),
+      runtime: false,
+    },
     options: {
       import: path.join(config.src, 'apps/options/index.tsx'),
       runtime: 'single',
